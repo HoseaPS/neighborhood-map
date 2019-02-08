@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -21,16 +21,15 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
-  
 
   .app {
     width: 100%;
   }
-  
+
   .app-content {
     display: flex;
   }
-  
+
   .sidebar {
     width: 300px;
     background: #212121;
@@ -44,20 +43,20 @@ const GlobalStyle = createGlobalStyle`
     height: calc(100vh - 50px);
     overflow-y: scroll;
   }
-  
+
   .sidebar.hidden {
     width: 0px;
     padding: 0px;
   }
-  
+
   .sidebar.hidden .location-list {
     display: none;
   }
-  
+
   .sidebar.hidden .input-wrapper {
     display: none;
   }
-  
+
   .sidebar .input-wrapper {
     width: 100%;
     margin-right: 80px;
@@ -66,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 5px;
     padding-bottom: 15px;
   }
-  
+
   .sidebar .input-wrapper input {
     width: 100%;
     height: 40px;
@@ -78,11 +77,11 @@ const GlobalStyle = createGlobalStyle`
   }
   .sidebar .input-wrapper input:hover,
   .sidebar .input-wrapper input:focus {
-    border: 2px solid #6991fd;
-}
-.sidebar .input-wrapper input::placeholder {
-  color: #000;
-}
+      border: 2px solid #6991fd;
+  }
+  .sidebar .input-wrapper input::placeholder {
+    color: #000;
+  }
   .sidebar .location-list {
     list-style-type: none;
     margin: 0;
@@ -94,16 +93,16 @@ const GlobalStyle = createGlobalStyle`
   }
   .sidebar .location:hover {
     text-decoration: underline;
-}
-.content {
-  margin-top: 50px;
-}
+  }
+  .content {
+    margin-top: 50px;
+  }
   .sidebar .location-list li {
     font-size: 0.9em;
     padding: 0 0 20px 0px;
     text-align: left;
   }
-  
+
   .sidebar .location {
     background-color: transparent;
     color: #fff;
@@ -113,16 +112,16 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
     text-align: left;
   }
-  
+
   .sidebar .location.selected {
     color: #00e64d;
     text-decoration: underline;
   }
-  
+
   .content {
     flex-grow: 1;
   }
-  
+
   .content .navbar {
     background-color: #222;
     color: white;
@@ -135,7 +134,7 @@ const GlobalStyle = createGlobalStyle`
     z-index: 9999999;
     width: 100%;
   }
-  
+
   .content .navbar .sidebarLink {
     cursor: pointer;
     color: #fff;
@@ -146,27 +145,27 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     left: 20px;
   }
-  
+
   .content .navbar .title {
     text-align: center;
     flex: 1;
   }
-  
+
   .app-header {
     background-color: #222;
     height: 40px;
     padding-top: 10px;
     color: white;
   }
-  
+
   .app-title {
     font-size: 1.5em;
   }
-  
+
   .App-intro {
     font-size: large;
   }
-  
+
   @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

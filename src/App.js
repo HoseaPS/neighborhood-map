@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { BrowserRouter } from "react-router-dom";
+import React, { Fragment } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import GlobalStyle from "./styles/global";
+import GlobalStyle from './styles/global';
 
-import Main from "./pages/main/";
+import Main from './pages/main';
 
 const App = () => (
   <BrowserRouter>
