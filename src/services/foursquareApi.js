@@ -2,10 +2,10 @@ import { CLIENT_ID, CLIENT_SECRET } from "./../config/credentials";
 
 const API = "https://api.foursquare.com/v2/venues";
 
-const VERSION = "20180724";
+const VERSION = "20190208";
 
 const CATEGORIES = {
-  hamburgueria: "4bf58dd8d48988d16c941735"
+  hamburgueria: "4d4b7105d754a06374d81259"
 };
 
 const queryParams = params => {

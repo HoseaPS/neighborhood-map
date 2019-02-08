@@ -20,7 +20,7 @@ class NavBar extends Component {
         >
           <FontAwesomeIcon icon={this.state.isActive ? faArrowLeft : faBars} />
         </button>
-        <div className="title">Hamburguerias do Bairro</div>
+        <div className="title">Pontos de alimentação na vizinhança</div>
       </div>
     );
   }

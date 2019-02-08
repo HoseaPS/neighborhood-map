@@ -65,6 +65,7 @@ class Main extends Component {
                 OnChangeText={this.updateQuery}
                 OnClickText={this.toogleMarkerLocation}
                 query={this.state.query}
+                OnToogleSidebar={this.toogleSidebar}
                 locations={this.filterLocations(this.state.query)}
               />
               <div className="content">
