@@ -39,5 +39,8 @@ const MapComponent = compose(
     ))}
   </GoogleMap>
 ));
+window.gm_authFailure = () => {
+  window.alert('Falha na autenticação do Google Maps');
+};
 
 export default MapComponent;

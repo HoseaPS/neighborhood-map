@@ -7,6 +7,7 @@ const SideBar = ({
   <div className={SidebarActive ? 'sidebar' : 'sidebar hidden'}>
     <div className="input-wrapper">
       <input
+        aria-label="Buscar"
         className="location-search"
         type="text"
         placeholder="Buscar"
@@ -20,7 +21,7 @@ const SideBar = ({
           <button
             type="button"
             className={marker.isMarkerShown ? 'location selected' : 'location'}
-            tabIndex="0"
+            tabIndex="1"
             onClick={() => OnClickText(marker)}
           >
             {marker.name}
@@ -36,7 +37,16 @@ SideBar.propTypes = {
   OnChangeText: PropTypes.func.isRequired,
   OnClickText: PropTypes.func.isRequired,
   query: PropTypes.string.isRequired,
-  locations: PropTypes.arrayOf(PropTypes.string).isRequired,
+  locations: PropTypes.arrayOf(
+    PropTypes.shape({
+      formattedAddress: PropTypes.string,
+      id: PropTypes.string,
+      isMarkerShown: PropTypes.bool,
+      lat: PropTypes.number,
+      lng: PropTypes.number,
+      name: PropTypes.string,
+    }),
+  ).isRequired,
 };
 
 export default SideBar;

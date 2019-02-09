@@ -73,12 +73,14 @@ class Main extends Component {
               />
               <div className="content">
                 <NavBar OnToogleSidebar={this.toogleSidebar} />
-                <MapComponent
-                  lat={lat}
-                  lng={lng}
-                  locations={this.filterLocations(query)}
-                  OnMarkerClick={this.toogleMarkerLocation}
-                />
+                <div id="map" aria-label="Map" role="application">
+                  <MapComponent
+                    lat={lat}
+                    lng={lng}
+                    locations={this.filterLocations(query)}
+                    OnMarkerClick={this.toogleMarkerLocation}
+                  />
+                </div>
               </div>
             </div>
           )}
