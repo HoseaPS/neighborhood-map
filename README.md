@@ -1,6 +1,6 @@
 # Neighborhood Map
 
-App que mostra pontos de alimentação em uma região específica. Feito com React, Google Maps API e FourSquare API como parte do Nanodegree Front-End Avançado da Udacity.
+App que mostra pontos de alimentação em uma região específica. Feito com React, Google Maps API e FourSquare API, como parte do Nanodegree Front-End Avançado da Udacity.
 
 ---
 
