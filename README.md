@@ -57,7 +57,7 @@ Este comando constroi o app para produção na pasta `build`.
 - Usando um **servidor estático**
 
 Para ambientes utilizando [Node](https://nodejs.org/),
-a maneira mais fácil de lidar com isso seria instalar [serve](https://github.com/zeit/serve) e deixe-o lidar com o resto. Rode o comando:
+a maneira mais fácil de lidar com isso seria instalar [serve](https://github.com/zeit/serve) e deixa-lo lidar com o resto. Rode o comando:
 
 ```sh
 npm install -g serve
