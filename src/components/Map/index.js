@@ -30,8 +30,20 @@ const MapComponent = compose(
         {marker.isMarkerShown && (
           <InfoWindow key={marker.id} onCloseClick={() => props.OnMarkerClick(marker)}>
             <div>
-              <p>{marker.name}</p>
+              <p style={{ fontWeight: '600', marginBottom: '5px' }}>{marker.name}</p>
               <p>{marker.formattedAddress}</p>
+              <p style={{ fontStyle: 'italic', marginTop: '10px', fontSize: '12px' }}>
+                Dados providos por
+                {' '}
+                <a
+                  style={{ color: 'black' }}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://pt.foursquare.com/"
+                >
+                  Foursquare
+                </a>
+              </p>
             </div>
           </InfoWindow>
         )}
